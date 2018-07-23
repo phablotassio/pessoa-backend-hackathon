@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "0ad9d810-1d94-42e3-9037-47f6e1797900",
+		"name": "Pessoa backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n    \"nome\" : \"roberto\",\n    \"email\" : \"phablo@\",\n    \"cpf\" :\"061\",\n\t\"telefone\" : \"061\"\n\t\n\t\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/stefa/pessoa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stefa",
+						"pessoa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Linguagem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\" : \"java\",\n\t\"sgLinguagem\" : \"ata\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/stefa/linguagem",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stefa",
+						"linguagem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargo",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"descricao\" : \"dev jr\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/stefa/cargo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stefa",
+						"cargo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profissao",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"idPessoa\" : {\n    \t\"id\" : 1\n    },\n\t \"idCargo\" : {\n\t \t\"id\" : 1\n\t },\n\t \n    \"idLinguage\" : {\n    \t\"id\" : 1\n    }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/stefa/profissao/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stefa",
+						"profissao",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
