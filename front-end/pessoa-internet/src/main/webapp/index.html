@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="lib/angular/angular.js"></script>
+    <script src="controller/pessoaController.js"></script>
+    <script src="service/pessoaService.js"></script>
+    <script src="lib/angular/angular.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <title>Document</title>
+</head>
+<body ng-controller="pessoaCtrl" >
+
+    <div class="container">
+
+        <div class="jumbotron">
+              
+                <h4> Cadastro Pessoas</h4>
+            
+                <table class="table table-striped">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Cpf</th>
+                    </tr>
+                    <tr ng-repeat="s in persons">
+                        <td>{{ s.nome }}</td>
+                        <td>{{ s.cpf}}</td>
+                    </tr>
+                </table>
+                <hr/>
+                <input class= "form-control" type="text" ng-model="person.nome" placeholder="Digite o Nome">
+                <input class= "form-control" type="text" ng-model="person.cpf" placeholder="Digite o Cpf">
+                <input class= "form-control" type="text" ng-model="person.email" placeholder="Digite o email">
+                <input class= "form-control" type="text" ng-model="person.telefone" placeholder="Digite o telefone">
+                <button  class="btn btn-primary btn-block"ng-click="addPersons()" >Cadastrar pessoa</button>
+    
+
+    
+
+        </div>
+           
+
+    </div>
+
+              
+         
+   
+    
+</body>
+</html>
